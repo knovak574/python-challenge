@@ -18,23 +18,25 @@ with open('c:/Users/KirkLaptop/Documents/Bootcamp/python_challenge/budget_data.c
 
     data = []    
 #add up total number of months in dataset
+    row_index = -1
+
     for row in profit_data:
-        data.append(row)
+        if row:
+            row_index +=1
+            rows = [int(row_index)]
+            #data.append(rows)
         
-
-print(data)
-
-#Total_months = len(profit_data)
-
+    print(rows)
 
 
 #create list for P/L figures and sum the profits and losses column 
-P_Ls = []
-
-#for i in range (len profit_data)
-    #sum("Profit/Losses", [1])
-
+#P_Ls = []
+    #Total_profit = 0
+    #for row in profit_data:
+        #if row:
+            #Total_profit=Total_profit+int(row[1])
 #P_Ls = profit_data{"Profit/Losses":[1]}
 #sum all profits and losses
-#Total_profit = sum(P_Ls)
+
+    #print(Total_profit)
 
