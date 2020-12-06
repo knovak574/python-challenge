@@ -1,4 +1,4 @@
-# PyBank
+# PyBank  
 
 import os
 import csv
@@ -24,19 +24,21 @@ with open('c:/Users/KirkLaptop/Documents/Bootcamp/python_challenge/budget_data.c
         if row:
             row_index +=1
             rows = [int(row_index)]
-            #data.append(rows)
-        
+                    
     print(rows)
 
 
 #create list for P/L figures and sum the profits and losses column 
 #P_Ls = []
-    #Total_profit = 0
-    #for row in profit_data:
-        #if row:
-            #Total_profit=Total_profit+int(row[1])
+    Total_profit = dict()
+    #Total_profit = {"Profit/Losses" : ()}
+    profit = 0
+    for row in profit_data:
+        if row:
+            profit=profit+("Profit/Losses" , [1])
+            Total_profit.append(profit)
 #P_Ls = profit_data{"Profit/Losses":[1]}
 #sum all profits and losses
 
-    #print(Total_profit)
+    print(Total_profit)
 
