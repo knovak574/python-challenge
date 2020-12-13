@@ -23,6 +23,6 @@ with open('c:/Users/KirkLaptop/Documents/Bootcamp/python_challenge/election_data
     for row in election_results:
         if row:
             row_index +=1
-            rows = [int(row_index)]
+            rows = int(row_index)
                     
-    print(rows)
+    print("Total Votes: ",rows)
