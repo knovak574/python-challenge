@@ -30,6 +30,7 @@ with open('c:/Users/KirkLaptop/Documents/Bootcamp/python_challenge/budget_data.c
     #Total_profit = {"Profit/Losses" : ()}
     
     profit = 0
+
     for row in profit_data:
         if row:
             profit=profit+int(row[1])
@@ -37,10 +38,15 @@ with open('c:/Users/KirkLaptop/Documents/Bootcamp/python_challenge/budget_data.c
 #P_Ls = profit_data{"Profit/Losses":[1]}
 #sum all profits and losses
 
-    print(f"Total Months: ",rows)
-    print(f"Total Profit: ",profit)
-    print(f"Average Change: ")
-    print(f"Greatest Increase in Profits: ")
-    print(f"Grreatest Decrease in Profits: ")
+    print("Total Months: ",rows)
+    print("Total Profit: ",profit)
+    print("Average Change: ")
+    print("Greatest Increase in Profits: ")
+    print("Greatest Decrease in Profits: ")
 
-
+with open("PyBankOutput.txt", "w") as text_file:
+    text_file.write("Total Months: ",rows)
+    text_file.write("Total Profit: ",profit)
+    text_file.write("Average Change: ")
+    text_file.write("Greatest Increase in Profits: ")
+    text_file.write("Greatest Decrease in Profits: ")
